@@ -21,20 +21,21 @@ public class MenuSelection {
                     break;
 			}
 		}
-        while (userSelected > 3);
+        while (userSelected != 0);
 	}
 
     public static int MenuData() {
         int selection;
-        Scanner sc = new Scanner (System.in);
+        Scanner option = new Scanner (System.in);
         System.out.println ("Select your option: ");
         System.out.println ("-------------------\n");
+        System.out.println ("0 - Exit");
         System.out.println ("1 - Add a new contact ");
         System.out.println ("2 - Search up a contact");
         System.out.println ("3 - Print all contacts");
 
         System.out.println ("You selected: ");
-        selection = sc.nextInt();
+        selection = option.nextInt();
         return selection;
 
     }
