@@ -1,9 +1,9 @@
-package mainpackage;
-import java.until.Scanner;
+package com.example.contactsystem;
+import java.util.Scanner;
 
 public class MenuSelection {
 	
-	public static void main(Stringp[] args) {
+	public void startMenu(String[] args) {
 		int userSelected;
 		do {
 			userSelected = MenuData();

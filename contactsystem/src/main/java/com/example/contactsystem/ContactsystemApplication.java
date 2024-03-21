@@ -17,8 +17,8 @@ public class ContactsystemApplication {
         return new CommandLineRunner() {
             @Override
             public void run(String... args) throws Exception {
-                contactDB db = new contactDB();
-                db.printHelloWorld(); // This will print "Hello World" to the console.
+                MenuSelection menu = new MenuSelection();
+                menu.startMenu(args);
             }
         };
     }
