@@ -5,11 +5,14 @@ public class MenuSelection {
 	
 	public void startMenu(String[] args) {
 		int userSelected;
+        contactDB cd = new contactDB();
+
 		do {
 			userSelected = MenuData();
 			switch (userSelected) {
 				case 1:
                     System.out.println ("Option 1 - 'Add a new contact' is selected.");
+                    cd.addContact(new Contact("John Doe", "1234567890", "johndoe@example.com"));
 					break;
 				case 2:
                     System.out.println ("Option 2 - 'Search up a contact' is selected.");
